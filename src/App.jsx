@@ -8,23 +8,36 @@ import Works from "./components/Works";
 import Feedbacks from "./components/Feedbacks";
 import Contact from "./components/Contact";
 import StarsCanvas from "./components/canvas/Stars";
+import SectionWrapper from "./components/SectionWrapper";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='realtive z-0 bg-primary'>
+      <div className='relative z-0 bg-primary'>
         <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
           <Navbar />
           <Hero />
         </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <Feedbacks />
+        <SectionWrapper idName='about'>
+          <About />
+        </SectionWrapper>
+        <SectionWrapper>
+          <Experience />
+        </SectionWrapper>
+        <SectionWrapper>
+          <Tech />
+        </SectionWrapper>
+        <SectionWrapper>
+          <Works />
+        </SectionWrapper>
+        <SectionWrapper>
+          <Feedbacks />
+        </SectionWrapper>
         <div className='relative z-0'>
-          <Contact />
-          <StarsCanvas />
+          <SectionWrapper>
+            <Contact />
+            <StarsCanvas />
+          </SectionWrapper>
         </div>
       </div>
     </BrowserRouter>

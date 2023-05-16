@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import backend from "./backend.png";
-import creator from "./creator.png";
+import cloud from "./cloud.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
@@ -32,8 +32,8 @@ import tripguide from "./tripguide.png";
 
 export {
   logo,
+  cloud,
   backend,
-  creator,
   mobile,
   web,
   github,
